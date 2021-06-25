@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magenizr AdminBranding
+ *
+ * @category    Magenizr
+ * @package     Magenizr_AdminBranding
+ * @copyright   Copyright (c) 2021 Magenizr (https://agency.magenizr.com)
+ * @license     https://www.magenizr.com/license Magenizr EULA
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="admin" translate="label" sortOrder="1000" showInDefault="1" showInWebsite="1" showInStore="1">
+            <group id="magenizr_adminbranding" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Admin Branding</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enabled</label>
+                    <comment><![CDATA[Disable the module temporarily.]]></comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+
+                <field id="magento_admin_login_logo_file_enabled" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Replace Admin Login Logo</label>
+                    <comment><![CDATA[Replace the Magento® logo on the admin login page. Default: No]]></comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+
+                <field id="magento_admin_login_logo_file" translate="label comment" type="image" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Admin Login Logo</label>
+                    <comment><![CDATA[Upload a SVG, PNG or GIF file. Recommended format 288x100px.]]></comment>
+                    <backend_model>Magenizr\AdminBranding\Model\Config\Backend\Image</backend_model>
+                    <base_url type="media" scope_info="1">magenizr_adminbranding</base_url>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+
+                <field id="magento_admin_menu_logo_file_enabled" translate="label comment" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Replace Admin Menu Logo</label>
+                    <comment><![CDATA[Replace the Magento® logo on top of the admin navigation. Default: No]]></comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+
+                <field id="magento_admin_menu_logo_file" translate="label comment" type="image" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Admin Menu Logo</label>
+                    <comment><![CDATA[Upload a SVG, PNG or GIF file. Recommended format 35x41px.]]></comment>
+                    <backend_model>Magenizr\AdminBranding\Model\Config\Backend\Image</backend_model>
+                    <base_url type="media" scope_info="1">magenizr_adminbranding</base_url>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+
+                <field id="magento_adminlogin_additional_text_enabled" translate="label comment" type="select" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Additional Text</label>
+                    <comment><![CDATA[Add additional text underneath the <strong>Sign In</strong> button on the admin login page. Default: No]]></comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+
+                <field id="magento_adminlogin_additional_text" translate="label comment" type="textarea" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Additional Text</label>
+                    <comment><![CDATA[HTML supported.]]></comment>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+
+            </group>
+        </section>
+    </system>
+</config>

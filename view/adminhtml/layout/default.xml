@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magenizr AdminBranding
+ *
+ * @category    Magenizr
+ * @package     Magenizr_AdminBranding
+ * @copyright   Copyright (c) 2021 Magenizr (https://agency.magenizr.com)
+ * @license     https://www.magenizr.com/license Magenizr EULA
+ */
+-->
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_image_src" xsi:type="helper" helper="Magenizr\AdminBranding\Helper\Data::getAdminLogoSrc">
+                    <param name="image">images/magento-icon.svg</param>
+                    <param name="enabled">magento_admin_menu_logo_file_enabled</param>
+                    <param name="file">magento_admin_menu_logo_file</param>
+                </argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+</page>

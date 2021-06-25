@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magenizr AdminBranding
+ *
+ * @category    Magenizr
+ * @package     Magenizr_AdminBranding
+ * @copyright   Copyright (c) 2021 Magenizr (https://agency.magenizr.com)
+ * @license     https://www.magenizr.com/license Magenizr EULA
+ */
+-->
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Magenizr_AdminBranding::css/style.css"/>
+    </head>
+    <body>
+        <referenceContainer name="form.buttons">
+            <block class="Magenizr\AdminBranding\Block\Adminhtml\Login" name="magenizr_adminbranding_adminhtml_login" template="Magenizr_AdminBranding::login.phtml"/>
+        </referenceContainer>
+    </body>
+</page>
