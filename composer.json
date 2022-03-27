@@ -2,7 +2,7 @@
   "name": "magenizr/magento2-adminbranding",
   "description": "Admin Branding allows you to replace the Magento® logo on the admin login page as well as on the dashboard. In addition to that, you can display a custom text and link your clients directly to your issue tracking plattform like JIRA or Zendesk.",
   "type": "magento2-module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": [
     "OSL-3.0"
   ],

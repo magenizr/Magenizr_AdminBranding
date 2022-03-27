@@ -1,10 +1,10 @@
 <?php
+declare(strict_types=1);
+
 /**
  * Magenizr AdminBranding
  *
- * @category    Magenizr
- * @package     Magenizr_AdminBranding
- * @copyright   Copyright (c) 2021 Magenizr (https://agency.magenizr.com)
+ * @copyright   Copyright (c) 2021 Magenizr (https://www.magenizr.com)
  * @license     https://www.magenizr.com/license Magenizr EULA
  */
 
