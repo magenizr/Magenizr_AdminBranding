@@ -24,7 +24,8 @@ Generating autoload files
 
 ## Installation (Composer 2)
 
-2. Use `composer update --no-install` to update your composer.lock file.
+1. Update your composer.json `composer require "magenizr/magento2-adminbranding":"1.0.1" --no-update`
+2. Use `composer update magenizr/magento2-adminbranding --no-install` to update your composer.lock file.
 
 ```
 Updating dependencies
