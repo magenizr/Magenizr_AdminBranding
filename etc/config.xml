@@ -3,7 +3,7 @@
 /**
  * Magenizr AdminBranding
  *
- * @copyright   Copyright (c) 2021 Magenizr (https://www.magenizr.com)
+ * @copyright   Copyright (c) 2021 - 2023 Magenizr (https://www.magenizr.com)
  * @license     https://www.magenizr.com/license Magenizr EULA
  */
 -->
@@ -15,6 +15,7 @@
                 <enabled>0</enabled>
                 <magento_admin_login_logo_file_enabled>0</magento_admin_login_logo_file_enabled>
                 <magento_admin_menu_logo_file_enabled>0</magento_admin_menu_logo_file_enabled>
+                <magento_admin_menu_logo_file></magento_admin_menu_logo_file>
                 <magento_adminlogin_additional_text_enabled>0</magento_adminlogin_additional_text_enabled>
                 <magento_adminlogin_additional_text><![CDATA[Implemented by <a href="https://www.yourcompany.tld">Your Company Ltd.</a>]]></magento_adminlogin_additional_text>
             </magenizr_adminbranding>

@@ -4,7 +4,7 @@ declare(strict_types=1);
 /**
  * Magenizr AdminBranding
  *
- * @copyright   Copyright (c) 2021 Magenizr (https://www.magenizr.com)
+ * @copyright   Copyright (c) 2021 - 2023 Magenizr (https://www.magenizr.com)
  * @license     https://www.magenizr.com/license Magenizr EULA
  */
 
@@ -15,10 +15,10 @@ use \Magento\Framework\App\Request\Http;
 class Data extends \Magento\Framework\App\Helper\AbstractHelper
 {
     /* Section in core config data */
-    const SECTION = 'admin/magenizr_adminbranding';
+    private const SECTION = 'admin/magenizr_adminbranding';
 
     /* Name of upload directory in ./media/ */
-    const UPLOAD_DIR = 'magenizr_adminbranding';
+    public const UPLOAD_DIR = 'magenizr_adminbranding';
 
     /**
      * @var \Magento\Framework\App\Filesystem\DirectoryList
@@ -36,7 +36,9 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
     private $fileSystem;
 
     /**
-     * Data constructor.
+     * Init constructor
+     *
+     * @param \Magento\Framework\Filesystem\Driver\File $fileSystem
      * @param \Magento\Framework\App\Filesystem\DirectoryList $directoryList
      * @param \Magento\Store\Model\StoreManagerInterface $storeManager
      * @param \Magento\Framework\App\Helper\Context $context
@@ -55,15 +57,17 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
     }
 
     /**
-     * @param $image
-     * @param $enabled
-     * @param $file
+     * Get path for new admin logo
+     *
+     * @param string $image
+     * @param boolean $enabled
+     * @param string $file
      * @return bool|string
      */
     public function getAdminLogoSrc($image, $enabled, $file)
     {
         // Return default image if not enabled
-        if (!$this->isSetFlag($enabled) || !$this->isEnabled()) {
+        if (!$this->isSetFlag($enabled) || !$this->isEnabled() || !$this->getScopeConfig($file)) {
             return $image;
         }
 
@@ -111,7 +115,7 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
     /**
      * Use isSetFlag to check boolean fields
      *
-     * @param $field
+     * @param string $field
      * @return mixed
      */
     public function isSetFlag($field)
@@ -125,7 +129,7 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
     /**
      * Get module configuration values from core_config_data
      *
-     * @param $field
+     * @param string $field
      * @return mixed
      */
     public function getScopeConfig($field)

@@ -3,13 +3,13 @@
 /**
  * Magenizr AdminBranding
  *
- * @copyright   Copyright (c) 2021 Magenizr (https://www.magenizr.com)
+ * @copyright   Copyright (c) 2021 - 2023 Magenizr (https://www.magenizr.com)
  * @license     https://www.magenizr.com/license Magenizr EULA
  */
 -->
 
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
-    <module name="Magenizr_AdminBranding" setup_version="1.0.1">
+    <module name="Magenizr_AdminBranding">
         <sequence>
             <module name="Magento_Backend"/>
         </sequence>

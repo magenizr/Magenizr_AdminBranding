@@ -4,15 +4,12 @@ declare(strict_types=1);
 /**
  * Magenizr AdminBranding
  *
- * @copyright   Copyright (c) 2021 Magenizr (https://www.magenizr.com)
+ * @copyright   Copyright (c) 2021 - 2023 Magenizr (https://www.magenizr.com)
  * @license     https://www.magenizr.com/license Magenizr EULA
  */
 
 namespace Magenizr\AdminBranding\Block\Adminhtml;
 
-/**
- * Class Dashboard
- */
 class Login extends \Magento\Framework\View\Element\Template
 {
     /**
