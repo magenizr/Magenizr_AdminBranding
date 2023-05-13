@@ -1,4 +1,4 @@
-[![Magenizr Plus](https://images2.imgbox.com/9a/ca/3rXwQJY2_o.gif)](https://account.magenizr.com)
+[![Magenizr Plus](https://images2.imgbox.com/11/6b/yVOOloaA_o.gif)](https://account.magenizr.com)
 ---
 
 # Admin Branding
