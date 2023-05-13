@@ -1,3 +1,6 @@
+[![Magenizr Plus](https://images2.imgbox.com/9a/ca/3rXwQJY2_o.gif)](https://account.magenizr.com)
+---
+
 # Admin Branding
 Create a unique Magento admin login by adding your company logo or a custom text ( HTML support ) underneath the login such as `Implemented by Your Company Ltd` or above the Magento navigation within the backend.
 
