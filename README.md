@@ -1,6 +1,8 @@
 [![Magenizr Plus](https://images2.imgbox.com/11/6b/yVOOloaA_o.gif)](https://account.magenizr.com)
 ---
 
+[![Latest Stable Version](http://poser.pugx.org/magenizr/magento2-adminbranding/v)](https://packagist.org/packages/magenizr/magento2-adminbranding) [![Total Downloads](http://poser.pugx.org/magenizr/magento2-adminbranding/downloads)](https://packagist.org/packages/magenizr/magento2-adminbranding) [![Latest Unstable Version](http://poser.pugx.org/magenizr/magento2-adminbranding/v/unstable)](https://packagist.org/packages/magenizr/magento2-adminbranding) [![License](http://poser.pugx.org/magenizr/magento2-adminbranding/license)](https://packagist.org/packages/magenizr/magento2-adminbranding) [![PHP Version Require](http://poser.pugx.org/magenizr/magento2-adminbranding/require/php)](https://packagist.org/packages/magenizr/magento2-adminbranding)
+
 # Admin Branding
 Create a unique Magento admin login by adding your company logo or a custom text ( HTML support ) underneath the login such as `Implemented by Your Company Ltd` or above the Magento navigation within the backend.
 
