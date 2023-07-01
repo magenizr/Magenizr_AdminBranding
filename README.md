@@ -11,7 +11,7 @@ Create a unique Magento admin login by adding your company logo or a custom text
 
 ## System Requirements
 - Magento 2.3.x, 2.4.x
-- PHP 7.x
+- PHP 7.x, 8.1
 
 ## Installation (Composer 2)
 
