@@ -1,5 +1,3 @@
----
-
 [![Latest Stable Version](https://poser.pugx.org/magenizr/magento2-adminbranding/v)](https://packagist.org/packages/magenizr/magento2-adminbranding) [![Total Downloads](https://poser.pugx.org/magenizr/magento2-adminbranding/downloads)](https://packagist.org/packages/magenizr/magento2-adminbranding) [![Latest Unstable Version](https://poser.pugx.org/magenizr/magento2-adminbranding/v/unstable)](https://packagist.org/packages/magenizr/magento2-adminbranding) [![License](https://poser.pugx.org/magenizr/magento2-adminbranding/license)](https://packagist.org/packages/magenizr/magento2-adminbranding) [![PHP Version Require](https://poser.pugx.org/magenizr/magento2-adminbranding/require/php)](https://packagist.org/packages/magenizr/magento2-adminbranding)
 
 # Admin Branding
