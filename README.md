@@ -12,7 +12,7 @@ Create a unique Magento admin login by adding your company logo or a custom text
 
 ## Installation (Composer 2)
 
-1. Update your composer.json `composer require "magenizr/magento2-adminbranding":"^1.0" --no-update`
+1. Update your composer.json `composer require "magenizr/magento2-adminbranding":"^1.1" --no-update`
 2. Use `composer update magenizr/magento2-adminbranding --no-install` to update your composer.lock file.
 
 ```
