@@ -4,8 +4,8 @@ declare(strict_types=1);
 /**
  * Magenizr AdminBranding
  *
- * @copyright   Copyright (c) 2021 - 2023 Magenizr (https://www.magenizr.com)
- * @license     https://www.magenizr.com/license Magenizr EULA
+ * @copyright   Copyright (c) 2021 - 2023 Magenizr (https://magenizr.com.au)
+ * @license     https://magenizr.com.au/license Magenizr EULA
  */
 
 namespace Magenizr\AdminBranding\Model\Config\Backend;

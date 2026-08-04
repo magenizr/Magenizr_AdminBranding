@@ -4,13 +4,11 @@ declare(strict_types=1);
 /**
  * Magenizr AdminBranding
  *
- * @copyright   Copyright (c) 2021 - 2023 Magenizr (https://www.magenizr.com)
- * @license     https://www.magenizr.com/license Magenizr EULA
+ * @copyright   Copyright (c) 2021 - 2024 Magenizr (https://magenizr.com.au)
+ * @license     https://magenizr.com.au/license Magenizr EULA
  */
 
 namespace Magenizr\AdminBranding\Helper;
-
-use \Magento\Framework\App\Request\Http;
 
 class Data extends \Magento\Framework\App\Helper\AbstractHelper
 {
@@ -87,6 +85,10 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
 
             // Check if image file actually exists on the filesystem
             if ($this->fileSystem->isReadable($mediaPathAbsolute)) {
+                // The value is consumed by the admin logo block via getViewFileUrl(), which always
+                // prepends the static theme URL. A path relative to that static directory is required
+                // so the browser resolves the ../ traversal back to pub/media/. An absolute media URL
+                // would be concatenated onto the static URL, producing a broken double URL.
                 $mediaPathRelative = '../../../../../../media';
 
                 $image = implode('/', [
